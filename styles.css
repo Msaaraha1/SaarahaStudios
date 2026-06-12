@@ -23,6 +23,16 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 /* ========================================
    CUSTOM CURSOR (DESKTOP ONLY)
    ======================================== */
@@ -663,7 +673,6 @@ nav {
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
   flex: 1;
-  -webkit-overflow-scrolling: touch;
 }
 
 .gallery-container::-webkit-scrollbar {
@@ -1327,6 +1336,14 @@ nav {
    CONTACT SECTION
    ======================================== */
 /* Contact Section */
+
+.contact,
+.contact-container,
+.contact-form,
+.contact-info {
+  max-width: 100%;
+}
+
 .contact {
   padding: 10rem 5%;
   position: relative;
@@ -1349,7 +1366,16 @@ nav {
   gap: 4rem;
   max-width: 1200px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
+
+
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+} 
 
 .contact-info {
   display: flex;
@@ -1411,13 +1437,15 @@ nav {
   color: var(--black);
 }
  /* Contact Form */
-/* Contact Form */
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: clamp(1.5rem, 3vw, 2rem);
   padding: 2rem;
   border: 1px solid rgba(212, 175, 55, 0.2);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-form h3 {
@@ -1440,6 +1468,8 @@ nav {
 
 .form-group input,
 .form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
   background: transparent;
   border: none;
   border-bottom: 1px solid rgba(212, 175, 55, 0.3);
@@ -1467,9 +1497,9 @@ nav {
 }
 
 .form-group input:focus + label,
-.form-group input:valid + label,
+.form-group input:not(:placeholder-shown) + label,
 .form-group textarea:focus + label,
-.form-group textarea:valid + label {
+.form-group textarea:not(:placeholder-shown) + label {
   top: -1.5rem;
   color: var(--gold);
   font-size: clamp(0.75rem, 1vw, 0.85rem);
@@ -1562,23 +1592,27 @@ nav {
   }
 }
 
-@media (max-width: 1024px) {
-  .contact-container {
-    grid-template-columns: 1fr;
-  }
-}
-
 @media (max-width: 640px) {
   .contact {
-    padding: clamp(2rem, 5vw, 3rem) 1rem;
+    padding: 2rem 1rem;
   }
 
-  .contact-heading {
-    margin-bottom: 2rem;
+  .contact-form {
+    padding: 1.25rem;
+    width: 100%;
   }
 
   .form-row {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .submit-btn {
+    width: 100%;
   }
 }
 
@@ -1742,3 +1776,4 @@ footer .logo {
     width: 22px;
   }
 }
+
