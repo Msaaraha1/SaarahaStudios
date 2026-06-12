@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saaraha Studios</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="preloader-text">
+        <span>S</span><span>A</span><span>A</span><span>R</span><span>A</span
+        ><span>H</span><span>A</span><br />
+        <p style="text-align: center">STUDIO</p>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+      <div class="logo">SAARAHA</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Home</a>
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <!-- Particles -->
+      <div class="particles" id="particles"></div>
+
+      <!-- 3D Rotating Frame -->
+      <div class="hero-frame">
+        <div class="frame-side">
+          <img
+            src="images/image1.jpeg"
+            alt="Portrait"
+          />
+        </div>
+        <div class="frame-side">
+          <img
+            src="images/image2.jpeg"
+            alt="Landscape"
+          />
+        </div>
+        <div class="frame-side">
+          <img
+            src="images/image3.jpeg"
+            alt="Concert"
+          />
+        </div>
+        <div class="frame-side">
+          <img
+            src="images/image4.jpeg"
+            alt="Ocean"
+          />
+        </div>
+      </div>
+
+      <!-- Hero Text -->
+      <div class="hero-text">
+        <h1>
+          <span><i>SAARAHA</i></span>
+          <span><i>STUDIOS</i></span>
+        </h1>
+        <p class="hero-subtitle">Photography & Visual Art</p>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="work">
+      <span class="section-title">Portfolio</span>
+      <h2 class="section-heading">Selected Works</h2>
+
+      <div class="gallery-wrapper">
+        <button class="gallery-nav gallery-nav-left" aria-label="Previous image">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="gallery-container">
+          <div class="gallery-card">
+            <img src="images/photo3.jpg" alt="Elegance - Puberty function" />
+            <div class="gallery-card-overlay">
+              <span>Elegance</span>
+              <h3>Puberty function</h3>
+            </div>
+            <div class="gallery-card-number">01</div>
+          </div>
+          <div class="gallery-card">
+            <img src="images/photo1.jpeg" alt="Portrait - Church wedding" />
+            <div class="gallery-card-overlay">
+              <span>Portrait</span>
+              <h3>Church wedding</h3>
+            </div>
+            <div class="gallery-card-number">02</div>
+          </div>
+          <div class="gallery-card">
+            <img src="images/photo6.jpeg" alt="Baby - Birthday shoot" />
+            <div class="gallery-card-overlay">
+              <span>Baby</span>
+              <h3>Birthday shoot</h3>
+            </div>
+            <div class="gallery-card-number">03</div>
+          </div>
+          <div class="gallery-card">
+            <img src="images/photo5.jpeg" alt="Natural Light - Pre wedding" />
+            <div class="gallery-card-overlay">
+              <span>Natural Light</span>
+              <h3>Pre wedding</h3>
+            </div>
+            <div class="gallery-card-number">04</div>
+          </div>
+          <div class="gallery-card">
+            <img src="images/photo4.jpeg" alt="Charming - Puberty function" />
+            <div class="gallery-card-overlay">
+              <span>Charming</span>
+              <h3>Puberty function</h3>
+            </div>
+            <div class="gallery-card-number">05</div>
+          </div>
+          <div class="gallery-card">
+            <img src="images/photo2.jpeg" alt="Traditional - Temple wedding" />
+            <div class="gallery-card-overlay">
+              <span>Traditional</span>
+              <h3>Temple wedding</h3>
+            </div>
+            <div class="gallery-card-number">06</div>
+          </div>
+           
+          
+          <div class="gallery-card">
+            <img src="images/0K7A6969.jpg" alt="Charming - Puberty function" title="puberty"/>
+            <div class="gallery-card-overlay">
+              <span>Nature</span>
+              <h3>Out Door</h3>
+            </div>
+            <div class="gallery-card-number">07</div>
+          </div>
+          <div class="gallery-card">
+            <img src="images/baby.jpeg" alt="Baby - Birthday shoot" />
+            <div class="gallery-card-overlay">
+              <span>Delicate</span>
+              <h3>Year One</h3>
+            </div>
+            <div class="gallery-card-number">08</div>
+          </div>
+        </div>
+        <button class="gallery-nav gallery-nav-right" aria-label="Next image">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <!-- View More Button -->
+      <div class="gallery-view-more">
+        <button class="view-more-btn" id="viewMoreBtn">
+          View More <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+      
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+      <span class="lightbox-close" aria-label="Close lightbox">&times;</span>
+      <div class="lightbox-content">
+        <img class="lightbox-image" src="" alt="" />
+        <div class="lightbox-caption"></div>
+      </div>
+      <button class="lightbox-prev" aria-label="Previous image">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="lightbox-next" aria-label="Next image">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <!-- Full Gallery Modal -->
+    <div class="full-gallery-modal" id="fullGalleryModal">
+      <span class="modal-close" aria-label="Close gallery">&times;</span>
+      <h2>All Works</h2>
+      <div class="full-gallery-grid" id="fullGalleryGrid">
+        <!-- Images will be populated by JavaScript -->
+      </div>
+    </div>
+
+    <!-- Marquee Section -->
+    <section class="marquee-section">
+      <div class="marquee">
+        <span class="marquee-item">Portraits</span>
+        <span class="marquee-item">Landscapes</span>
+        <span class="marquee-item">Events</span>
+        <span class="marquee-item">Fashion</span>
+        <span class="marquee-item">Portraits</span>
+        <span class="marquee-item">Landscapes</span>
+        <span class="marquee-item">Events</span>
+        <span class="marquee-item">Fashion</span>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <span class="section-title">What I Do</span>
+      <h2 class="section-heading">Services</h2>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-camera"></i></div>
+          <h3>Portrait Photography</h3>
+          <p>
+            Capturing the essence of individuals through carefully crafted
+            portraits that reveal personality and emotion.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-mountain"></i></div>
+          <h3>Landscape Photography</h3>
+          <p>
+            Documenting the beauty of natural and urban landscapes with an
+            artistic eye for composition and light.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-calendar-alt"></i></div>
+          <h3>Event Coverage</h3>
+          <p>
+            Professional coverage for weddings, corporate events, and special
+            occasions with a documentary approach.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-palette"></i></div>
+          <h3>Photo Editing</h3>
+          <p>
+            Expert post-processing and retouching services to bring out the best
+            in every photograph.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about-image">
+        <img
+          src="images/mahalingam.jpeg"
+          alt="Photographer"
+        />
+      </div>
+      <div class="about-content">
+        <span class="section-title">About Me</span>
+        <h2>Creating Visual Poetry Through the Lens</h2>
+        <p>
+          With over a decade of experience in professional photography, I've
+          dedicated my life to capturing moments that matter. My approach
+          combines technical precision with artistic vision, creating images
+          that resonate on an emotional level.
+        </p>
+        <p>
+          Based in Nilgiris, I work with clients all over tamilnadu, bringing stories to
+          life through carefully composed frames and masterful use of light and
+          shadow.
+        </p>
+        <div class="signature">K N Mahalingam</div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <span class="section-title">Get In Touch</span>
+      <h2 class="contact-heading">Let's Create <span>Together</span></h2>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <p>Kotagiri, Coimbatore</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p>saarahastudios@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p>+91 9442735489</p>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="https://www.instagram.com/saaraha_studios?igsh=MXExMjZjbGI4M21ucQ==" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/share/1GcwtL3xS6/" aria-label="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <h3>Start a Project</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" id="name" required />
+              <label for="name">Your Name</label>
+              <span class="input-line"></span>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" required />
+              <label for="email">Your Email</label>
+              <span class="input-line"></span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" id="subject" required />
+              <label for="subject">Subject</label>
+              <span class="input-line"></span>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" required />
+              <label for="phone">Phone Number</label>
+              <span class="input-line"></span>
+            </div>
+          </div>
+          <div class="form-group">
+    <textarea id="message" rows="4" placeholder=" " required></textarea>
+    <label for="message">Tell me about your project</label>
+    <span class="input-line"></span>
+</div>
+          <button type="submit" class="submit-btn">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+  <div class="logo">SAARAHA</div>
+  <div class="footer-links">
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html">Terms of Service</a>
+    <a href="#">© <span id="year"></span> Saaraha Studios</a>
+  </div>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/saaraha_studios?igsh=MXExMjZjbGI4M21ucQ==" target="_blank" rel="noopener noreferrer" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/share/1GcwtL3xS6/" target="_blank" rel="noopener noreferrer" title="Facebook">
+      <i class="fab fa-facebook"></i>
+    </a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
