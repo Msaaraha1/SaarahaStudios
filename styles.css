@@ -655,7 +655,7 @@ nav {
   gap: clamp(1rem, 3vw, 1.5rem);
 }
 
-.gallery-container {
+.gallery-container{
   display: flex;
   gap: clamp(1rem, 2vw, 2rem);
   overflow-x: auto;
